@@ -39,7 +39,7 @@ echo -e "\e[1m\e[32m2. Open Port... \e[0m" && sleep 1
 ufw allow 22 && ufw allow 4133 && ufw allow 3033 && ufw enable
 
 echo -e "\e[1m\e[32m3. Install Rupstup... \e[0m" && sleep 1
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl https://sh.rustup.rs -sSf | sh
 
 echo -e "\e[1m\e[32m4. Clone Repository... \e[0m" && sleep 1
 git clone https://github.com/AleoHQ/snarkOS.git --depth 1
