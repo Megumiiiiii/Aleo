@@ -36,7 +36,7 @@ cd $HOME
 sudo apt-get update && sudo apt install git && sudo apt install screen && apt install cargo
 
 echo -e "\e[1m\e[32m2. Open Port... \e[0m" && sleep 1
-ufw allow 22 && ufw allow 4133/tcp && ufw allow 3033/tcp && ufw enable
+ufw allow 22 && ufw allow 4133 && ufw allow 3033 && ufw enable
 
 echo -e "\e[1m\e[32m3. Install Rupstup... \e[0m" && sleep 1
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
