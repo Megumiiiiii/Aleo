@@ -47,7 +47,6 @@ git clone https://github.com/AleoHQ/snarkOS.git --depth 1
 cd snarkOS
 
 echo -e "\e[1m\e[32m5. Build... \e[0m" && sleep 1
-cd snarkOS
 ./build_ubuntu.sh
 
 echo -e "\e[1m\e[32m6. Cargo Path Install... \e[0m" && sleep 1
