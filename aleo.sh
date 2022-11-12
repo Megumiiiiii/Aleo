@@ -40,6 +40,7 @@ ufw allow 22 && ufw allow 4133 && ufw allow 3033 && ufw enable
 
 echo -e "\e[1m\e[32m3. Install Rupstup... \e[0m" && sleep 1
 curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
 
 echo -e "\e[1m\e[32m4. Clone Repository... \e[0m" && sleep 1
 git clone https://github.com/AleoHQ/snarkOS.git --depth 1
